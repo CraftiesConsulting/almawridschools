@@ -1,0 +1,528 @@
+/*
+
+My Custom CSS
+
+
+*/
+
+
+/* --------------------------------------
+   General
+   -------------------------------------- */
+
+     
+   body{
+   	-webkit-font-smoothing: antialiased;
+	   text-rendering: optimizelegibility;
+   	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+   }
+
+   p.well{
+   	border-left: 4px solid #5BC0DE;
+   }
+
+   .panel-heading{
+   	background-color:#5BC0DE;
+   	color: #fff;
+   }
+
+   .btn-purple{
+   			color: #ffffff;
+  			background-color:#432965;
+  			border-color: white;
+   }
+
+.btn-purple,
+.btn-purple:hover,
+.btn-purple:focus,
+.btn-purple:active {
+  border-color: transparent;
+}
+
+.btn-purple:hover,
+.btn-purple:focus {
+  text-decoration: underline;
+  color: #c8a2c8;
+}
+/* !Thumbnails */
+/* ----------------------------------------------- */
+.thumbnail-view {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: -moz-zoom-in;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+.thumbnail-view img {
+  max-width: 100%;
+}
+.thumbnail-view .thumbnail-view-hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  background: #111111 url(../images/gallery/zoom.png) no-repeat 50%;
+  z-index: 10;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+.thumbnail-view:hover .thumbnail-view-hover {
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  opacity: .5;
+  filter: alpha(opacity=50);
+}
+.thumbnail-footer {
+  padding: 7px 10px;
+  border-top: 1px dotted #ccc;
+}
+.thumbnail-footer:before,
+.thumbnail-footer:after {
+  content: " ";
+  display: table;
+}
+.thumbnail-footer:after {
+  clear: both;
+}
+.thumbnail-footer a {
+  color: #999;
+  font-size: 12px;
+}
+.thumbnail-footer a:hover {
+  text-decoration: none;
+  color: #d74b4b;
+}
+.thumbnail-footer .pull-left a {
+  padding: 0 12px 0 0;
+}
+.thumbnail-footer .pull-right a {
+  padding: 0 0 0 12px;
+}
+
+/* --------------------------------------
+   achievers
+   -------------------------------------- */
+   .achiever{
+      text-align: center;
+   }
+
+   div.achiever-info{
+      margin: auto auto;
+      font-weight: bolder;
+      text-align: justify;
+      display: inline-block;
+      color: #fff;
+      padding: 10px 20px;
+      border-left: 35px solid #428BCA; 
+      background: #5BC0DE;
+      border: 4px solid #5BC0DE;
+   }
+
+   img.img-circle.achiever-image{
+        border: 6px solid #428BCA;
+        margin: 4px auto;
+   }
+/* --------------------------------------
+   contact-page
+   -------------------------------------- */
+
+div.contact-group > img{
+     margin: 10px;
+}
+
+div.contact-group{
+     margin: 15px;
+}
+
+.btn{
+     margin-top: 10px;
+}
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+.container{
+     max-width: 960px;
+}
+
+/* --------------------------------------
+   about page body
+   -------------------------------------- */
+.about-paragraphs{
+    
+     padding: 15px 10px;
+     text-align: justify;
+}
+
+.about-paragraphs-head{
+     text-align: center;
+     font-weight: bold;
+     font-size: 25px;
+     border-left: 7px solid #5BC0DE;
+     padding-left: 20px;
+     text-align: left;
+     font-weight: 500;
+}
+
+/* --------------------------------------
+   countdown
+   -------------------------------------- */
+.days,
+.hours,
+.minutes,
+.seconds{
+     display: inline-block;
+     background: #5BC0DE;
+     color: #fff;
+     padding: 1px 5px;
+     font-weight: bolder;
+}
+
+.countdown{
+     text-align: center;
+     font-family: cursive;
+     margin-top: 20px;
+}
+
+/* --------------------------------------
+   home page body
+   -------------------------------------- */
+#welcome{
+     font-family: "Trebuchet", sans-serif;
+     text-align: center;
+     font-size: 40px;
+     font-weight: bold;
+     margin-bottom: 30px;
+     margin-top: 30px;
+}
+
+.home-paragraphs{
+     background: #f9f9f9;
+     padding: 15px 10px;
+     border-top: 5px solid #5BC0DE; 
+     text-align: justify;
+}
+
+.home-paragraphs-head{
+     text-align: center;
+     font-weight: bold;
+     font-size: 25px;
+}
+
+.read-more{
+     background: #5BC0DE;
+     color: #fff;
+}
+
+.register{
+     margin-top: 25px;
+     margin-left: 15px;
+     padding: 0; 
+     height: 230px;
+     width: 98%;
+     border-left: 5px solid #5BC0DE;
+      background: url(../images/banner/banner11.jpg)repeat;
+     background-color: rgba(53, 83, 61, 1);
+}
+
+#registration{
+     margin-top: 60px;
+     margin-right: 20px;
+     padding-left: 20px;
+     padding-top: 14px; 
+     float: right;
+     height: 140px;
+     width: 415px;
+     border: 5px solid #5BC0DE; 
+     color: red;
+}
+
+#registration > p{
+     color: #fff;
+     font-weight: bold;
+     font-size: 15px;
+    
+}
+#registration > p a{
+     color: #5BC0DE;
+}
+#registration > h1{
+     font-weight: bold;
+     color: #fff;
+     margin: 0;
+     font-size: 30px; 
+}
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+body {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+        font-family: "Trebuchet", sans-serif;
+}
+.soical{
+  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.well .page-header {
+	margin-top: 0;
+}
+
+.well .page-header h1 {
+	margin-top: 0;
+}
+
+ul.unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+h4.pre-footer{
+  text-align: center;
+}
+
+
+   /* --------------------------------------
+   info
+   -------------------------------------- */
+
+   .info{
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: justify;
+    background-image: url('../images/banner/banner2.JPG');
+   }
+
+   
+   iframe{
+
+    overflow: none;
+   }
+
+   div.address-info{
+      padding-left: 25px;
+   }
+   /* --------------------------------------
+   gallery
+   -------------------------------------- */
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+div.page-info{
+    margin-top: 0;
+    background-color: #80C6E9;
+    color: #FFFFFF;
+    height: 60px;
+}
+/* --------------------------------------
+   admission modal
+   -------------------------------------- */
+   div#admissionModal .modal-header, 
+   div#admissionModal .modal-footer{
+      color: #fff;
+      background-color: #5BC0DE
+   }
+
+   /* --------------------------------------
+   login modal
+   -------------------------------------- */
+
+/* --------------------------------------
+  carousel
+  -------------------------------------- */
+
+#homeCarousel .item{
+    height: 400px;
+}
+
+div#homeCarousel{
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+}
+
+
+   div#loginModal{
+    margin-top: 100px;
+   }
+
+   div#loginModal .modal-header{
+    color: #fff;
+    background-color: #5BC0DE;
+   }
+
+header{
+     width: 100%;
+     height: 400px;
+}
+
+header#header-bg{
+    background: url('../images/banner/banner4.JPG') ;
+}
+
+.gallery{
+    margin: 10px;
+}
+
+#header-image{
+     position: absolute;
+     top: 0;
+     left: 0;
+}
+
+
+
+
+ul.nav li{
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #fff;
+}
+
+li#logo{
+     margin-top: 2px;
+     padding: 0px;
+}
+
+
+nav.navbar{
+     background: none;
+}
+
+.nav > li > a{
+     padding: 15px 10px;
+     color: #fff;
+     background: #5BC0DE;
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+#activities-Carousel{
+     margin-top: 20px; 
+}
+div.item {
+     height: 280px;
+}
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+footer{
+     background: #428BCA;
+     text-align: center;
+     color: #fff;
+     
+}
+
+.pre-footer{
+     margin-top: 20px;
+     background: #F9F9F9;
+}
+
+.zoom img{
+
+		-webkit-transition: all 300ms;
+		-moz-transition: all 300ms;
+		transition: all 300ms;
+		max-width: 100%;
+} 
+
+.zoom{
+     -webkit-transform: scale(1.05);
+     -moz-transform: scale(1.05);
+     transform: scale(1.05);
+}
+
+.alert {
+	margin-top: 20px;
+	display: none;
+}
+
+.copyright{
+  padding-top: 10px;
+  height: 40px;
+
+}
+
+.address{
+  text-align: justify;
+}
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+     
+	ul.nav li{
+          margin: 0;
+        }
+        
+        li#logo{
+          display: none;
+        }
+        
+        #registration{
+          width: 250px;
+          padding-right: 4px;
+          font-weight: bold;
+        }
+        
+         #registration > p{
+               font-size: 12px;
+         }
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	ul.nav li{
+          margin: 0;
+        }
+        
+        li#logo{
+          display: none;
+        }
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+
+}
+
+@media (min-width: 768px) {
+     ul.nav{
+     float: none;
+     display: inline-block;
+     margin: 10px auto;
+     text-align: center;
+}
+
+     .nav-collapse{
+     text-align: center;
+}
+     
+}
+
+
+
