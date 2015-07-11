@@ -44,8 +44,35 @@ Route::get('achievers', function()
 
 Route::get('contact-us', function()
 {
+    Mail::send('emails.contact', array('message' => 'testing almawrid'), function($message)
+    {
+        $message->to('alabamustapha@gmail.com', 'Testing almawrid')->subject('Weelcome');
+    });
+
     $active = "contact";
 	return View::make('contact')->with('active', $active);
+});
+
+
+Route::post('contact-us', function()
+{
+    $sender_name = Input::get('name');
+    $sender_email = Input::get('email');
+    $message_body = Input::get('message');
+    $data = array(
+        'message_body'=>$message_body,
+        'sender_email'=>$sender_email,
+        'sender_name'=>$sender_name
+    );
+
+    Mail::send('emails.contact', $data, function($message) use ($sender_name, $sender_email)
+    {
+        $message->from($sender_email, $sender_name);
+        $message->to('alabamustapha@gmail.com', 'Almawrids Schools')->subject('Contact us page');
+        $message->replyTo($sender_email, $sender_name);
+    });
+
+
 });
 
 Route::get('admin/page_settings', function()

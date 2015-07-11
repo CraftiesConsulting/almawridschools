@@ -15,17 +15,10 @@ return array(
 	*/
 
 	'mailgun' => array(
-		'domain' => '',
-		'secret' => '',
+		'domain' => 'mg.craftiesconsulting.com',
+		'secret' => 'key-dbdcd3a29c6e9f7481bb6318cbc32fce',
 	),
 
-	'mandrill' => array(
-		'secret' => '',
-	),
 
-	'stripe' => array(
-		'model'  => 'User',
-		'secret' => '',
-	),
 
 );

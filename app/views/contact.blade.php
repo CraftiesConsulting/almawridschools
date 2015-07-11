@@ -10,25 +10,25 @@
 			<hr/>
 				<h3 class="text-center">Mail us</h3>
 					<hr/>
-					<form class="form-horizontal">
+					<form class="form-horizontal" action="{{ url('contact-us') }}" method="POST">
 						<div class="form-group">
-							<label class="col-lg-2 control-label" for="inputName">Name</label>
+							<label class="col-lg-2 control-label" for="iame">Name</label>
 							<div class="col-lg-10">
-								<input class="form-control" id="inputName" placeholder="Name" type="text">
+								<input class="form-control" id="name" placeholder="Name" name="name" type="text">
 							</div>
 						</div>
 						
 						<div class="form-group">
-							<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+							<label class="col-lg-2 control-label" for="email">Email</label>
 							<div class="col-lg-10">
-								<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+								<input class="form-control" id="mail" name="email" placeholder="Email" type="email">
 							</div>
 						</div>
 						
 						<div class="form-group">
 							<label class="col-lg-2 control-label" for="inputMessage">Message</label>
 							<div class="col-lg-10">
-								<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+								<textarea class="form-control" name="message" id="message" placeholder="message" rows="3"></textarea>
 								<button class="btn btn-primary btn-block pull-left" type="submit">Send!</button>
 							</div>
 						</div>
