@@ -72,7 +72,7 @@ Route::post('contact-us', function()
         $message->replyTo($sender_email, $sender_name);
     });
 
-    return Redirect::back()->with('messag', "we will get back to you shortly");
+    return Redirect::back()->with('message', "we will get back to you shortly");
 });
 
 Route::get('admin/page_settings', function()
