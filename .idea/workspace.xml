@@ -2,35 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e15fa455-bbd2-4bd4-9cbb-3a431388f355" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/facilities/DSC_0086.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/admission/admission_form.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/facilities/classroom.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/facilities/computer_lab.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/staffs/staff-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/staffs/staff-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/staffs/staff-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/staffs/staff-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/staffs/staff-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/staffs/staff-sm-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/staffs/staff-sm-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/staffs/staff-sm-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/staffs/staff-sm-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/staffs/staff-sm-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/staffs/staff-sm-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/staffs/staff.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/students/student-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/students/student-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/students/student-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/students/student-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/students/student-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/students/student-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/students/student-sm-1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/students/student-sm-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/students/student-sm-3.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/students/student-sm-4.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/students/student-sm-5.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/gallery/thumbnails/students/student-sm-6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/facilities/transport.JPG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="almawrid.iws" />
@@ -280,7 +251,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436776755371</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="redesign and images">
+      <created>1436776872087</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1436776872087</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
