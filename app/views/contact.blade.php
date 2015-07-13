@@ -11,10 +11,10 @@
 				<h3 class="text-center">Mail us</h3>
 					<hr/>
 					<form class="form-horizontal" action="{{ url('contact-us') }}" method="POST">
-					@if(isset($message))
+					@if( Session::get('message') !== null )
 					    <div class="alert alert-success alert-dismissible" role="alert">
                           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                          <strong>{{ $message }}</strong>
+                          <strong>{{ Session::get('message') }}</strong>
                         </div>
 					@endif
 						<div class="form-group">

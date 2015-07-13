@@ -43,7 +43,7 @@
 				<span class = "seconds">00</span> Seconds.
 			</div>
 			<hr>
-			<button class="btn btn-block btn-info ">Download Admission Form</button>
+			<a href="{{ url('admission_form') }}" class="btn btn-block btn-info ">Download Admission Form</a>
 		      </div>
 		    </div>
 		  </div>

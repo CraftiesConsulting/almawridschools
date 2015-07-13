@@ -47,24 +47,13 @@
 						<li class="active" data-slide-to="0" data-target="#activities-Carousel"></li>
 						<li data-slide-to="1" data-target="#activities-Carousel"></li>
 						<li data-slide-to="2" data-target="#activities-Carousel"></li>
-						<li data-slide-to="3" data-target="#activities-Carousel"></li>
-						<li data-slide-to="4" data-target="#activities-Carousel"></li>
-						<li data-slide-to="5" data-target="#activities-Carousel"></li>
-						<li data-slide-to="6" data-target="#activities-Carousel"></li>
 					</ol>
 			
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
+
 					<div class="item active">
-						<img src="{{ asset('images/DSC_0065.JPG') }}" alt="Library">
-						<div class="carousel-caption">
-							<h4>School Library</h4>
-							<p>A well equiped Library to aid student reading</p>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-					
-					<div class="item">
-						<img src="assets/images/classroom.jpg" alt="classroom">
+						<img src="{{ asset('images/facilities/classroom.jpg') }}" alt="classroom">
 						<div class="carousel-caption">
 							<h4>Modern Class Rooms</h4>
 							<p>Conducive classroom for better assimilation during classes</p>
@@ -72,43 +61,22 @@
 					</div><!-- end item -->
 					
 					<div class="item">
-					<img src="assets/images/computer_lab.jpg" alt="Computer Laboratory">
+					<img src="{{ asset('images/facilities/computer_lab.jpg') }}" alt="Computer Laboratory">
 						<div class="carousel-caption">
 							<h4>Computer Laboratory</h4>
-							<p>Well equiped computer laboratory for pracical session on subject taught in computing</p>
+							<p>Well equipped computer laboratory for practical session on subject taught in computing</p>
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
 
+
 					<div class="item">
-						<img src="assets/images/science_lab.jpg" alt="Science Laboratory">
-						<div class="carousel-caption">
-							<h4>SCIENCE LABORATORY</h4>
-							<p>For exposure to scientific apparatus an praticals</p>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-					
-					<div class="item">
-					<img src="assets/images/transportation.jpg" alt="Transportaion">
+					<img src=" {{ asset('images/facilities/transport.jpg') }}" alt="Transportaion">
 						<div class="carousel-caption">
 							<h4>Transportation</h4>
 							<p>Transporatation of students from their various home to school and back home after school period</p>
 						</div><!-- end carousel-caption-->
 					</div><!-- end item -->
-					<div class="item">
-						<img src="assets/images/hostel.jpg" alt="Hostel">
-						<div class="carousel-caption">
-							<h4>Hostel Accomodation</h4>
-							<p>A conducive hostel for boarding student</p>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
-					
-					<div class="item">
-					<img src="assets/images/health.jpg" alt="health service">
-						<div class="carousel-caption">
-							<h4>Provision of First Aid</h4>
-							<p>In case of accident, students are givewn first Aid treatment</p>
-						</div><!-- end carousel-caption-->
-					</div><!-- end item -->
+
 
 				</div><!-- carousel-inner -->
 				

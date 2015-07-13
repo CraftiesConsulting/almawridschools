@@ -32,7 +32,8 @@ $(document).ready(function(){
     });
 
 
-	$(".group4").colorbox({rel:'group4', slideshow:false});
+	$(".student").colorbox({rel:'student', slideshow:false});
+    $(".staff").colorbox({rel:'staff', slideshow:false});
 
     //$('#cboxSlideshow').
     $('button#cboxClose').addClass('btn btn-danger');

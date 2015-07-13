@@ -44,10 +44,10 @@ Route::get('achievers', function()
 
 Route::get('contact-us', function()
 {
-    Mail::send('emails.contact', array('message' => 'testing almawrid'), function($message)
-    {
-        $message->to('alabamustapha@gmail.com', 'Testing almawrid')->subject('Weelcome');
-    });
+//    Mail::send('emails.contact', array('message' => 'testing almawrid'), function($message)
+//    {
+//        $message->to('alabamustapha@gmail.com', 'Testing almawrid')->subject('Weelcome');
+//    });
 
     $active = "contact";
 	return View::make('contact')->with('active', $active);
@@ -72,7 +72,7 @@ Route::post('contact-us', function()
         $message->replyTo($sender_email, $sender_name);
     });
 
-    return Redirect::back()->with('message', "we will get back to you shortly");
+    return Redirect::to('contact-us')->with('message', "we will get back to you shortly");
 });
 
 Route::get('admin/page_settings', function()
@@ -99,4 +99,17 @@ Route::get('admin/password_management', function()
 	return View::make('admin.password_management')->with('active', $active);
 });
 
+Route::get('admission_form', function(){
 
+    $file = public_path() . "/admission/admission_form.pdf";
+    if (File::isFile($file))
+    {
+        $file = File::get($file);
+        $response = Response::make($file, 200);
+        // using this will allow you to do some checks on it (if pdf/docx/doc/xls/xlsx)
+        $response->header('Content-Type', 'application/pdf');
+        return $response;
+    }
+
+    return Response::download($file);
+});
