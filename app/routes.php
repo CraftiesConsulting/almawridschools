@@ -69,8 +69,6 @@ Route::post('contact-us', function()
     {
         $message->from($sender_email, $sender_name);
         $message->to('info@almawridschools.com', 'Almawrids Schools')->subject('Contact us page');
-        $message->cc('almawridschools@gmail.com', 'Almawrids Schools')->subject('Contact us page');
-        $message->cc('almawridschools@craftiesconsulting.com', 'Almawrids Schools')->subject('Contact us page');
         $message->replyTo($sender_email, $sender_name);
     });
 
