@@ -142,7 +142,7 @@
 			<address class="address">
 				Umar Audi Road, Opp. Tiger House, Beside Unilorin Staff Quarters, Fate Area, GRA., P.M.B., 1604, Ilorin, Kwara State.<br>
 				Tel: <br>
-				Email: <br>
+				Email: <span class="text-info">info@almaridschools.com</span><br>
 			</address>
 		</div>
 		<div class="col-lg-4">
