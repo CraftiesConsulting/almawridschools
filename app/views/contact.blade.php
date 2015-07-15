@@ -10,13 +10,13 @@
 			<hr/>
 				<h3 class="text-center">Mail us</h3>
 					<hr/>
-					<form class="form-horizontal" action="{{ url('contact-us') }}" method="POST">
 					@if(Session::has('message'))
                         <div class="alert alert-info alert-dismissible" role="alert">
                           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                           <strong>{{Session::get('message')}}</strong>
                         </div>
                     @endif
+					<form class="form-horizontal" action="{{ url('contact-us') }}" method="POST">
 						<div class="form-group">
 							<label class="col-lg-2 control-label" for="iame">Name</label>
 							<div class="col-lg-10">
