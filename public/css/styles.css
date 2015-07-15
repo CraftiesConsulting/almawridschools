@@ -232,7 +232,7 @@ div.contact-group{
      height: 230px;
      width: 98%;
      border-left: 5px solid #5BC0DE;
-      background: url('../images/banner/banner11.jpg')repeat;
+      background: url('../images/banner/banner11.JPG')repeat;
      background-color: rgba(53, 83, 61, 1);
 }
 
@@ -398,7 +398,7 @@ ul.nav li{
 
 li#logo{
      margin-top: 2px;
-     padding: 0px;
+     padding: 0;
 }
 
 
