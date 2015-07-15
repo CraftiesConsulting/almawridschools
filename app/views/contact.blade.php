@@ -11,12 +11,12 @@
 				<h3 class="text-center">Mail us</h3>
 					<hr/>
 					<form class="form-horizontal" action="{{ url('contact-us') }}" method="POST">
-					@if( Session::get('message') !== null )
-					    <div class="alert alert-success alert-dismissible" role="alert">
+					@if(Session::has('message'))
+                        <div class="alert alert-info alert-dismissible" role="alert">
                           <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                          <strong>{{ Session::get('message') }}</strong>
+                          <strong>{{Session::get('message')}}</strong>
                         </div>
-					@endif
+                    @endif
 						<div class="form-group">
 							<label class="col-lg-2 control-label" for="iame">Name</label>
 							<div class="col-lg-10">
@@ -32,7 +32,7 @@
 						</div>
 						
 						<div class="form-group">
-							<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+							<label class="col-lg-2 control-label" for="message">Message</label>
 							<div class="col-lg-10">
 								<textarea class="form-control" name="message" id="message" placeholder="message" rows="3"></textarea>
 								<button class="btn btn-primary btn-block pull-left" type="submit">Send!</button>
