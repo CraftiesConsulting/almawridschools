@@ -155,7 +155,7 @@
 <footer>
 	<div class= "container">
 		<div class="row copyright">
-			Copyright &copy; Designed By craftiesworld.
+			Copyright &copy; Designed By <a href="http://www.craftiesconsulting.com" target="_blank" title="Crafties Consulting Limited" class="copy">Crafties Consulting Limited</a>.
 		</div><!-- end row -->	
 	</div><!-- end container -->
 </footer>

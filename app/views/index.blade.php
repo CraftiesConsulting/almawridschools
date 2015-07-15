@@ -41,7 +41,7 @@
 				<div class="col-12 register">
 					<div id="registration">
 						<h1>Registration</h1>
-						<p>New Academic exam takes  place every year. You can apply for your ward by downloading and filling the required information <a href="#">here</a></p>
+						<p>New Academic exam takes  place every year. You can apply for your ward by downloading and filling the required information <a href="{{ url('admission_form') }}">here</a></p>
 					</div>
 				</div>
 			</div>
