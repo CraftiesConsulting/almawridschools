@@ -13,6 +13,11 @@
 
 Route::get('/', function()
 {
+//    $user = new User;
+//    $user->username = "admin";
+//    $user->password = Hash::make('islam');
+//    $user->save();
+    Auth::logout();
     $active = "home";
 	return View::make('index')->with('active', $active);
 });
@@ -81,23 +86,54 @@ Route::get('admin/page_settings', function()
 	return View::make('admin.page_settings')->with('active', $active);
 });
 
-Route::get('admin/achievers_settings', function()
-{
-    $active = "achievers_settings";
-	return View::make('admin.achievers_settings')->with('active', $active);
+
+
+Route::get('admin', array('before' => 'auth', function(){
+   return var_dump(Auth::attempt(array('username' => 'admin', 'password' => 'islam')));
+}));
+
+Route::post('login', function(){
+    $username = Input::get('username');
+    $password = Input::get('password');
+    if(Auth::attempt(array('username' => $username, 'password' => $password))){
+        return Redirect::to('admin');
+    }else{
+        return Redirect::to('login')->with('message', "Login details incorrect");
+    }
 });
 
-Route::get('admin/gallery_settings', function()
-{
-    $active = "gallery_settings";
-	return View::make('admin.gallery_settings')->with('active', $active);
-});
 
-Route::get('admin/password_management', function()
-{
-    $active = "password_management";
-	return View::make('admin.password_management')->with('active', $active);
-});
+//
+//Route::get('admin/achievers_settings', function()
+//{
+//    $active = "achievers_settings";
+//	return View::make('admin.achievers_settings')->with('active', $active);
+//});
+//
+//Route::get('admin/gallery_settings', function()
+//{
+//    $active = "gallery_settings";
+//	return View::make('admin.gallery_settings')->with('active', $active);
+//});
+//
+//Route::get('admin/password_management', function()
+//{
+//    $active = "password_management";
+//	return View::make('admin.password_management')->with('active', $active);
+//});
+//
+//
+//
+//Route::get('admin/password_management', function()
+//{
+//    $active = "password_management";
+//    return View::make('admin.password_management')->with('active', $active);
+//});
+//
+//
+//
+
+
 
 Route::get('admission_form', function(){
 
@@ -112,4 +148,8 @@ Route::get('admission_form', function(){
     }
 
     return Response::download($file);
+});
+
+Route::get('login', function(){
+   return View::make('login');
 });

@@ -60,18 +60,18 @@
 		      </div>
 		      <div class="modal-body">
 				
-				<form class="form-horizontal">
+				<form class="form-horizontal" action="{{ url('login')}}" method="post">
 						<div class="form-group">
-							<label class="col-lg-2 control-label" for="inputName">Username</label>
+							<label class="col-lg-2 control-label" for="password">Username</label>
 							<div class="col-lg-10">
-								<input class="form-control" id="inputName" placeholder="Name" type="text">
+								<input name="username" class="form-control" id="username" placeholder="username" type="text" required>
 							</div>
 						</div>
 						
 						<div class="form-group">
-							<label class="col-lg-2 control-label" for="inputEmail">Password</label>
+							<label class="col-lg-2 control-label" for="password">Password</label>
 							<div class="col-lg-10">
-								<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+								<input class="form-control" id="password" placeholder="password" type="password" name="password" required>
 							</div>
 						</div>
 						<input type="submit" value="Login" name="submit" class="btn btn-info btn-block">
