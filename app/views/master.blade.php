@@ -118,7 +118,7 @@
 					<li <?php if($active == "contact"){ echo "class=\"active\""; } ?>>
 					    <a href="contact-us">Contact Us</a>
 					</li>
-					<li><a href="login" data-toggle="modal" data-target="#loginModal">Login</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#loginModal">Login</a></li>
 				</ul>
 			</div>
 		</nav>
